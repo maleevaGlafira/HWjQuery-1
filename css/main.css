@@ -1,0 +1,99 @@
+body {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.row{
+    margin-bottom: 10px;
+}
+.button{
+
+    padding: 10px;
+    color:white;
+    background: linear-gradient(to top, #131315, #675779, #131315);
+    border: 2px solid  #020203;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+}
+.button:hover{
+    background: linear-gradient(to top, #ececef, #A9A9DE, #ececef) ;
+    color: black;
+    outline: none;
+}
+
+.button:focus{
+    outline: none;
+}
+
+
+#showText{
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+}
+#parent-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(220,220,220,0.5);
+
+}
+
+#window{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+
+    background: lightgray;
+    display: none;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 2px 2px 2px 2px rgba(1,1,1, 0.7);
+
+}
+#window .headerwin{
+    height: 50px;
+    background: #232323;
+
+}
+#window .content{
+    padding: 20px;
+
+
+}
+
+ #exit{
+     background: #101010;
+     height: 50px;
+     width: 50px;
+     right: 0;
+     top: 0;
+     position: absolute;
+     cursor: pointer;
+ }
+  .element{
+      height: 80%;
+      width: 3px;
+      background: white;
+      position: absolute;
+      top: 10%;
+      left: 50% ;
+  }
+
+  .left{
+      transform: rotate(45deg);
+  }
+
+  .right{
+
+      transform: rotate(-45deg);
+  }
+
+#exit:hover .element{
+    background: #dddddd;
+}
